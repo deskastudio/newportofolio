@@ -1,0 +1,40 @@
+body {
+
+}
+
+#background {
+    margin-top: 0;
+    background: url(images/kace-rodriguez-p3OzJuT_Dks-unsplash.jpg) no-repeat;
+    background-size: cover;
+    height: 1111px;
+    max-height: 1111px;
+}
+
+h5 {
+    font-size: 22px;
+    padding-bottom: 20px;
+}
+
+#background-footer {
+    margin-bottom: 0;
+    background: url(images/kace-rodriguez-p3OzJuT_Dks-unsplash1.jpg) no-repeat;
+    background-size: cover;
+}
+
+
+a {
+    text-decoration: none;
+    
+}
+
+.btn-button {
+    border: 3px solid white;
+    border-radius: 40px;
+    color: white;
+    background-color: transparent;
+}
+
+.btn-button:hover {
+    background-color: white;
+    color: black;
+}
