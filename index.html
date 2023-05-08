@@ -10,7 +10,7 @@
 </head>
 <body class="bg-dark text-light">
   <section id="background">
-      <nav class="navbar navbar-expand-lg bg-transparent text-light">
+      <nav class="navbar navbar-expand-lg bg-transparent nav-color text-light position-fixed w-100 z-2">
           <div class="container">
             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-plugin me-2" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M1 8a7 7 0 1 1 2.898 5.673c-.167-.121-.216-.406-.002-.62l1.8-1.8a3.5 3.5 0 0 0 4.572-.328l1.414-1.415a.5.5 0 0 0 0-.707l-.707-.707 1.559-1.563a.5.5 0 1 0-.708-.706l-1.559 1.562-1.414-1.414 1.56-1.562a.5.5 0 1 0-.707-.706l-1.56 1.56-.707-.706a.5.5 0 0 0-.707 0L5.318 5.975a3.5 3.5 0 0 0-.328 4.571l-1.8 1.8c-.58.58-.62 1.6.121 2.137A8 8 0 1 0 0 8a.5.5 0 0 0 1 0Z"/>
@@ -58,33 +58,36 @@
       <div class="row text-center">
         <h1 class="mt-4 fw-bold" style="font-size: 30px;">About Me</h1>
         <div>My Skill Of Junior Software Developer Based In Indonesia</div>
-        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mb-3 mb-sm-0" style="margin-top: 60px;">
-          <div class="">
-            <div class="bg-dark text-light">
-              <h5 class="card-title">Front End Developer</h5>
+        <div class="col-lg-4 col-md-12 col-sm-12 mb-3 mb-sm-0" style="margin-top: 60px;">
+        <h4>Front End Developer</h4>
+          <div class="container">
+            <div class="card bg-dark">
               <img src="images/front end1.png" class="img-fluid rounded mt-2 mb-2" alt="...">
-              <button href="#" class="btn-button mt-2 mb-3 col-sm-7 col-8">More Info</button>
-              <p class="card-text">A front-end developer is a type of web developer who specializes in creating the user interface and visual aspects of a website or application using languages such as HTML, CSS, and JavaScript. They work on the client-side of web development, focusing on the design and functionality that users interact with directly.</p>
+              <div class="image-caption">
+                <p>A front-end developer is a type of web developer who specializes in creating the user interface and visual aspects of a website or application using languages such as HTML, CSS, and JavaScript.</p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mb-3 mb-sm-0" style="margin-top: 60px;">
-          <div class="">
-            <div class="bg-dark text-light">
-              <h5 class="card-title">Data Analytics</h5>
+        <div class="col-lg-4 col-md-12 col-sm-12 mb-3 mb-sm-0" style="margin-top: 60px;">
+        <h4>Data Analytics</h4>
+          <div class="container">
+            <div class="card bg-dark">
               <img src="images/data analis1.png" class=" img-fluid rounded mt-2 mb-2" alt="...">
-              <button href="#" class="btn-button mt-2 mb-3 col-sm-7 col-8">More Info</button>
+              <div class="image-caption">
+                <p>Data analytics is the process of examining large and varied sets of data using statistical and computational methods to extract insights, identify patterns, and make informed decisions.</p>
+              </div>
             </div>
-            <p class="card-text">A UI/UX designer is a professional who focuses on designing the user interface (UI) and user experience (UX) of digital products such as websites, mobile apps, and software. They use a combination of design principles, user research, and digital tools to create interfaces that are visually appealing, easy to use, and provide a seamless experience for the user.</p>
           </div>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mb-3 mb-sm-0" style="margin-top: 60px;">
-          <div class="">
-            <div class="bg-dark text-light">
-              <h5 class="card-title">UI/UX Designer</h5>
+        <div class="col-lg-4 col-md-12 col-sm-12 mb-3 mb-sm-0" style="margin-top: 60px;">
+        <h4>UI/UX Designer</h4>
+          <div class="container">
+            <div class="card bg-dark">
               <img src="images/ui ux1.png" class="img-fluid rounded mt-2 mb-2" alt="...">
-              <button href="#" class="btn-button mt-2 mb-3 col-sm-7 col-8">More Info</button>
-              <p class="card-text">Data analytics is the process of examining large and varied sets of data using statistical and computational methods to extract insights, identify patterns, and make informed decisions. It involves collecting, cleaning, and transforming data into a usable format, analyzing it using various techniques such as data mining, machine learning, and statistical modeling, and then presenting the results in a meaningful way.</p>
+              <div class="image-caption">
+                <p>A UI/UX designer is a professional who focuses on designing the user interface (UI) and user experience (UX) of digital products such as websites, mobile apps, and software.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -109,7 +112,7 @@
               <input type="text" class="form-control" id="inp_message" placeholder="Your Message">
             </div>
             <div class="d-flex justify-content-center mt-5">
-              <a href="https://wasap.at/MpOBP7" type="submit" class="btn-button p-2">Submit</a>
+                <button onclick="welcome(event)" type="submit" class="btn-button p-2">Submit</button>
             </div>
           </form>
         </div>

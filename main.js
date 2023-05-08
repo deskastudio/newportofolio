@@ -1,19 +1,14 @@
-function onFormSubmit(e) {
-    e.preventDefault() 
-    const email = $("#inp_email")
-    const subject = $("#inp_subject")
-    const message = $("#inp_message")
-
-    if(!$(email).val()) {
-        alert("Email is Required")
-    } else if (!$(subject).val()) {
-        alert("Subject is Required")
-    } else if (!$(message).val()) {
-        alert("Message is Required")
-    } else {
-        alert("Form Submitted")
-        $(email).val("")
-        $(subject).val("")
-        $(message).val("")
+const navbar = document.getElementsByTagName('nav')[0];
+window.addEventListener('scroll', function() {
+    console.log(window.scrollY);
+    if (window.scrollY > 1) {
+        navbar.classList.replace('bg-transparent', 'nav-color');
+    } else if (this.window.scrollY <= 0) {
+        navbar.classList.replace('nav-color', 'bg-transparent');
     }
+});
+
+function welcome(e) {
+    window.open("https://wasap.at/MpOBP7")
 }
+

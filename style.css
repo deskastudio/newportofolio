@@ -1,7 +1,3 @@
-body {
-
-}
-
 #background {
     margin-top: 0;
     background: url(images/kace-rodriguez-p3OzJuT_Dks-unsplash.jpg) no-repeat;
@@ -24,7 +20,15 @@ h5 {
 
 a {
     text-decoration: none;
-    
+}
+
+.nav-color {
+    background-color: burlywood;
+    transition: all ease-in-out 0.3s;
+}
+
+.bg-transparent {
+    transition: all ease-in-out 0.3s;
 }
 
 .btn-button {
@@ -38,3 +42,44 @@ a {
     background-color: white;
     color: black;
 }
+
+.card {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    z-index: 1;
+}
+
+card img {
+    transform: scale(1);
+    transition: all 0.3s ease-out;
+}
+
+.image-caption {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(5, 5, 5, .7);
+    top: 1000px;
+    transition: all 0.7s ease-in;
+}
+
+.image-caption p {
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 50px;
+    text-shadow: 1px 1px rgba(5, 5, 5, .5);
+}
+
+.card:hover .image-caption {
+    top: 0;
+    transition: all 0.7s ease-out;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in;
+}
+
